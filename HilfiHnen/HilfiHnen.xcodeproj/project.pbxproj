@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0001 /* HilfiHnenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0001 /* HilfiHnenApp.swift */; };
+		AA0002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0002 /* ContentView.swift */; };
+		AA0003 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0003 /* GameState.swift */; };
+		AA0004 /* GameLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0004 /* GameLevel.swift */; };
+		AA0005 /* LevelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0005 /* LevelData.swift */; };
+		AA0006 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0006 /* MainMenuView.swift */; };
+		AA0007 /* LevelSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0007 /* LevelSelectView.swift */; };
+		AA0008 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0008 /* StoryView.swift */; };
+		AA0009 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0009 /* ResultView.swift */; };
+		AA0010 /* GameContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0010 /* GameContainerView.swift */; };
+		AA0011 /* PipeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0011 /* PipeCellView.swift */; };
+		AA0012 /* Match3Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0012 /* Match3Engine.swift */; };
+		AA0013 /* PipeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0013 /* PipeEngine.swift */; };
+		AA0014 /* BalanceEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0014 /* BalanceEngine.swift */; };
+		AA0015 /* ThermometerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0015 /* ThermometerEngine.swift */; };
+		AA0016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0016 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA0001 /* HilfiHnenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HilfiHnenApp.swift; sourceTree = "<group>"; };
+		BA0002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BA0003 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		BA0004 /* GameLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLevel.swift; sourceTree = "<group>"; };
+		BA0005 /* LevelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelData.swift; sourceTree = "<group>"; };
+		BA0006 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		BA0007 /* LevelSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectView.swift; sourceTree = "<group>"; };
+		BA0008 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		BA0009 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		BA0010 /* GameContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameContainerView.swift; sourceTree = "<group>"; };
+		BA0011 /* PipeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipeCellView.swift; sourceTree = "<group>"; };
+		BA0012 /* Match3Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match3Engine.swift; sourceTree = "<group>"; };
+		BA0013 /* PipeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipeEngine.swift; sourceTree = "<group>"; };
+		BA0014 /* BalanceEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceEngine.swift; sourceTree = "<group>"; };
+		BA0015 /* ThermometerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermometerEngine.swift; sourceTree = "<group>"; };
+		BA0016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA9999 /* HilfiHnen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HilfiHnen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA0001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA0001 /* HilfiHnen */ = {
+			isa = PBXGroup;
+			children = (
+				DA0010 /* App */,
+				DA0020 /* Models */,
+				DA0030 /* Views */,
+				DA0040 /* GameMechanics */,
+				BA0016 /* Assets.xcassets */,
+			);
+			path = HilfiHnen;
+			sourceTree = "<group>";
+		};
+		DA0010 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BA0001 /* HilfiHnenApp.swift */,
+				BA0002 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DA0020 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA0003 /* GameState.swift */,
+				BA0004 /* GameLevel.swift */,
+				BA0005 /* LevelData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA0030 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA0006 /* MainMenuView.swift */,
+				BA0007 /* LevelSelectView.swift */,
+				BA0008 /* StoryView.swift */,
+				BA0009 /* ResultView.swift */,
+				BA0010 /* GameContainerView.swift */,
+				BA0011 /* PipeCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA0040 /* GameMechanics */ = {
+			isa = PBXGroup;
+			children = (
+				BA0012 /* Match3Engine.swift */,
+				BA0013 /* PipeEngine.swift */,
+				BA0014 /* BalanceEngine.swift */,
+				BA0015 /* ThermometerEngine.swift */,
+			);
+			path = GameMechanics;
+			sourceTree = "<group>";
+		};
+		EA0001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA9999 /* HilfiHnen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA0000 /* MainGroup */ = {
+			isa = PBXGroup;
+			children = (
+				DA0001 /* HilfiHnen */,
+				EA0001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA0001 /* HilfiHnen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB0001 /* Build configuration list for PBXNativeTarget "HilfiHnen" */;
+			buildPhases = (
+				CA0001 /* Frameworks */,
+				CA0002 /* Sources */,
+				CA0003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HilfiHnen;
+			productName = HilfiHnen;
+			productReference = BA9999 /* HilfiHnen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA9999 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FA0001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = FB0002 /* Build configuration list for PBXProject "HilfiHnen" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = de;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				de,
+				en,
+				Base,
+			);
+			mainGroup = EA0000 /* MainGroup */;
+			productRefGroup = EA0001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA0001 /* HilfiHnen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA0003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0016 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA0002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0001 /* HilfiHnenApp.swift in Sources */,
+				AA0002 /* ContentView.swift in Sources */,
+				AA0003 /* GameState.swift in Sources */,
+				AA0004 /* GameLevel.swift in Sources */,
+				AA0005 /* LevelData.swift in Sources */,
+				AA0006 /* MainMenuView.swift in Sources */,
+				AA0007 /* LevelSelectView.swift in Sources */,
+				AA0008 /* StoryView.swift in Sources */,
+				AA0009 /* ResultView.swift in Sources */,
+				AA0010 /* GameContainerView.swift in Sources */,
+				AA0011 /* PipeCellView.swift in Sources */,
+				AA0012 /* Match3Engine.swift in Sources */,
+				AA0013 /* PipeEngine.swift in Sources */,
+				AA0014 /* BalanceEngine.swift in Sources */,
+				AA0015 /* ThermometerEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FC0001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLE = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC0002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLE = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC0003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hilfiHnen.game;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FC0004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hilfiHnen.game;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB0001 /* Build configuration list for PBXNativeTarget "HilfiHnen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC0003 /* Debug */,
+				FC0004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB0002 /* Build configuration list for PBXProject "HilfiHnen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC0001 /* Debug */,
+				FC0002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA9999 /* Project object */;
+}
