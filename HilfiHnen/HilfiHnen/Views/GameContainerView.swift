@@ -1,5 +1,4 @@
 import SwiftUI
-import SpriteKit
 
 struct GameContainerView: View {
     @EnvironmentObject var gameState: GameState
