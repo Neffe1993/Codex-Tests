@@ -2,12 +2,11 @@ import SwiftUI
 
 @main
 struct HilfiHnenApp: App {
-    @StateObject private var gameState = GameState()
-
+    @StateObject private var gs = GameState()
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(gameState)
+            RootView()
+                .environmentObject(gs)
                 .preferredColorScheme(.light)
         }
     }

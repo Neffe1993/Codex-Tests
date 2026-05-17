@@ -1,61 +1,25 @@
-import Foundation
+import SwiftUI
 import Combine
 
-enum AppScreen: Equatable {
-    case mainMenu
-    case levelSelect
-    case story(levelIndex: Int)
-    case game(levelIndex: Int)
-    case result(stars: Int, levelIndex: Int)
+enum Screen: Equatable {
+    case map
+    case scenario(Int)
+    case match3(Int)
+    case pipe(Int)
+    case hourglass(Int)
+    case result(Int, Int) // levelIndex, stars
 }
 
 final class GameState: ObservableObject {
-    @Published var currentScreen: AppScreen = .mainMenu
-    @Published var totalStars: Int = 0
-    @Published var levelProgress: [Int: Int] = [:]   // levelIndex → best stars (0-3)
-    @Published var coins: Int = 1000
+    @Published var screen: Screen = .map
+    @Published var stars: Int = 25348
+    @Published var completedLevels: [Int: Int] = [:]   // level → stars
 
-    var unlockedLevels: Int {
-        // Level 0 always unlocked; unlock next if previous completed
-        var count = 1
-        for i in 0..<LevelData.levels.count {
-            if (levelProgress[i] ?? 0) > 0 { count = i + 2 }
-        }
-        return min(count, LevelData.levels.count)
-    }
+    func unlocked(_ i: Int) -> Bool { i == 0 || (completedLevels[i-1] ?? 0) > 0 }
 
-    func startLevel(_ index: Int) {
-        currentScreen = .story(levelIndex: index)
-    }
-
-    func beginGame(_ index: Int) {
-        currentScreen = .game(levelIndex: index)
-    }
-
-    func completeLevel(_ index: Int, stars: Int) {
-        let prev = levelProgress[index] ?? 0
-        if stars > prev {
-            levelProgress[index] = stars
-            let newStars = stars - prev
-            totalStars += newStars
-        }
-        currentScreen = .result(stars: stars, levelIndex: index)
-    }
-
-    func goToLevelSelect() {
-        currentScreen = .levelSelect
-    }
-
-    func goToMainMenu() {
-        currentScreen = .mainMenu
-    }
-
-    func nextLevel(after index: Int) {
-        let next = index + 1
-        if next < LevelData.levels.count {
-            startLevel(next)
-        } else {
-            goToLevelSelect()
-        }
+    func complete(_ level: Int, stars s: Int) {
+        let prev = completedLevels[level] ?? 0
+        if s > prev { stars += (s - prev) * 10; completedLevels[level] = s }
+        screen = .result(level, s)
     }
 }
