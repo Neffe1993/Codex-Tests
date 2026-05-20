@@ -9,18 +9,14 @@ struct RootView: View {
             switch gs.screen {
             case .map:
                 LevelMapView()
-            case .scenario(let i):
-                ScenarioView(level: allLevels[i])
-            case .match3(let i):
-                Match3View(level: allLevels[i])
             case .pipe(let i):
-                PipeMiniGameView(level: allLevels[i])
+                PipePuzzleView(config: allPipeLevels[i])
             case .hourglass(let i):
-                HourglassChallengeView(level: allLevels[i])
+                HourglassChallengeView(config: allPipeLevels[i])
             case .result(let i, let s):
-                ResultView(levelIndex: i, stars: s)
+                ResultView(levelId: i, starsEarned: s)
             }
         }
-        .animation(.easeInOut(duration: 0.35), value: gs.screen)
+        .animation(.easeInOut(duration: 0.3), value: gs.screen)
     }
 }
